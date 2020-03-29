@@ -1,17 +1,18 @@
 var btns=document.getElementsByClassName("btn");
 var disp=document.getElementById("display");
-var notProg=true;
-var operand1=0;
-var operand2=null;
-var operator=null;
+var operand1='0';
+var operand2='0';
+var operator='+';
 for(var i=0;i<btns.length;i++)
 {
     btns[i].addEventListener('click',function(){
         var value=this.getAttribute('id');
         if(value=="clear")
         {
-            notProg=true;
             disp.innerText="0";
+            operand1='0';
+            operand2='0';
+            operator='+';
         }
         else if(value=="del")
         {
@@ -36,15 +37,14 @@ for(var i=0;i<btns.length;i++)
         }
         else if(value=="=")
         {
-            if(notProg)
-                operand2=parseFloat(disp.innerText);
+            operand2=parseFloat(disp.innerText);
             var result=eval(operand1+" "+operator+" "+operand2);
             //disp.innerText
-            if(result){
+            if(result || result===0){
                 disp.innerText=result;
-                operand1=result;
-                notProg=false;
-                // operator=null;
+                operand1='0';
+                operand2='0';
+                operator='+';
             }
         }
         else if(value==".")
