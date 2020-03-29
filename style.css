@@ -1,13 +1,39 @@
-.heading{
+/* .heading{
     display: flex;
     justify-content: center;
-}
+} */
 
-.heading h1{
+/* .heading h1{
     margin: 0em;
     margin-bottom: 15px;
+    font-family: sans-serif;
+} */
+body{
+    margin: 0;
+}
+.nav-wrapper{
+    height: 60px;
+    display: 'flex';
+    background-color: #4267b2;
+    align-items: center;
+}
+.nav-component{
+    display: flex;
+    align-items: center;
+}
+.nav-component img{
+    padding-top: 5px;
+    width: 50px;
+	margin-left: 10px;
+}
+.nav-component h1{
+    margin: 0;
+    font-family: sans-serif;
+    color: white;
+    margin-left: 10px;
 }
 .calc-wrapper{
+    margin-top: 40px;
     display: flex;
     justify-content: center;
     
@@ -79,4 +105,8 @@
 .btn-black{
     background-image: linear-gradient(to right bottom, 	rgb(205,133,63),rgb(210,105,30));
     /* background-image: linear-gradient(to right bottom, rgb(255,69,0), rgb(255,140,0)); */
+}
+
+.footer{
+    margin-top: 50px;
 }
