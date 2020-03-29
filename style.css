@@ -27,6 +27,7 @@ body{
 	margin-left: 10px;
 }
 .nav-component h1{
+    padding-top: 5px;
     margin: 0;
     font-family: sans-serif;
     color: white;
