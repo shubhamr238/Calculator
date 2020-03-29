@@ -93,7 +93,7 @@ window.addEventListener("keydown", function(e){
 });
 
 //footer Note
-var date= new Date();
-var yr=date.getFullYear();
-var note=document.getElementById('footer-note');
-note.innerText+=" Shubham Rakshit "+"2019 - "+yr;
+// var date= new Date();
+// var yr=date.getFullYear();
+// var note=document.getElementById('footer-note');
+// note.innerText+=" Shubham Rakshit "+"2019 - "+yr;
