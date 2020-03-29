@@ -12,7 +12,7 @@ for(var i=0;i<btns.length;i++)
             disp.innerText="0";
             operand1='0';
             operand2='0';
-            operator='+';
+            // operator='+';
         }
         else if(value=="del")
         {
