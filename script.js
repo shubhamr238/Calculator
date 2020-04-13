@@ -24,8 +24,9 @@ for(var i=0;i<btns.length;i++)
         else if(value=="+"||value=="-"||value=="*"||value=="/")
         {
             operand1=parseFloat(disp.innerText);
-            operator=value;
-            disp.innerText="0";//check
+                operator=value;
+                //disp.innerText="0";
+                disp.innerText="";
         }
         else if(value=="%")
         {
